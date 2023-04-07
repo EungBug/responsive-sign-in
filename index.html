@@ -13,48 +13,52 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="logo"></div>
-      <div class="text-group">
-        <h1 class="title">NFT Access</h1>
-        <p class="description">Please fill your detail to access your account.</p>
-      </div>
+    <section class="sign-in">
+      <div class="container">
+        <div class="logo"></div>
+        <div class="text-group">
+          <h1 class="title">NFT Access</h1>
+          <p class="description">Please fill your detail to access your account.</p>
+        </div>
 
-      <form action="post">
-        <label>
-          Email
-          <input type="text" />
-          <div id="password-toggle" class="material-icons">highlight_off</div>
-        </label>
+        <form action="post">
+          <label>
+            Email
+            <input type="text" />
+            <div id="password-toggle" class="material-icons">highlight_off</div>
+          </label>
 
-        <label>
-          Password
-          <input type="password" />
-          <div id="password-toggle" class="material-icons">visibility_off</div>
-        </label>
+          <label>
+            Password
+            <input type="password" />
+            <div id="password-toggle" class="material-icons">visibility_off</div>
+          </label>
 
-        <div class="options">
-          <div class="checkbox">
-            <input type="checkbox" name="Remember me" id="remember" />
-            <label for="remember">Remember me</label>
+          <div class="options">
+            <div class="checkbox">
+              <input type="checkbox" name="Remember me" id="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+
+            <a href="#">Forgot Password?</a>
           </div>
+        </form>
 
-          <a href="#">Forgot Password?</a>
+        <div class="buttons">
+          <div class="btn sign-in">Sign in</div>
+          <div class="btn google">
+            <img src="./images/ico_google.png" alt="Google" />
+            Sign in with Google
+          </div>
         </div>
-      </form>
 
-      <div class="buttons">
-        <div class="btn sign-in">Sign in</div>
-        <div class="btn google">
-          <img src="./images/ico_google.png" alt="Google" />
-          Sign in with Google
-        </div>
+        <p class="help">
+          Don't have an account?
+          <a href="javascript:void(0)">Sign up</a>
+        </p>
       </div>
 
-      <p class="help">
-        Don't have an account?
-        <a href="javascript:void(0)">Sign up</a>
-      </p>
-    </div>
+      <img class="main-img" src="./images/sigin_in_main.png" alt="Main Image" />
+    </section>
   </body>
 </html>

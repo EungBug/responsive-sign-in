@@ -17,13 +17,16 @@ a {
   text-decoration: none;
 }
 
+section.sign-in {
+  position: relative;
+  margin: auto 0;
+}
+
 .container {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 88px 20px;
-  margin: auto;
 }
 
 .logo {
@@ -36,6 +39,7 @@ a {
 
 .text-group {
   width: 100%;
+  max-width: 360px;
 }
 
 h1.title {
@@ -60,6 +64,7 @@ form {
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  max-width: 360px;
 }
 
 form > label {
@@ -149,6 +154,7 @@ input#remember:checked + label:before {
 
 .buttons {
   width: 100%;
+  max-width: 360px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -191,4 +197,44 @@ p.help {
 
 p.help a {
   color: var(--color-primary);
+}
+
+img.main-img {
+  display: none;
+}
+
+@media (min-width: 740px) {
+  section.sign-in {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 100%;
+    min-width: 500px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+
+  .logo {
+    position: fixed;
+    background-image: url('./images/logo_web.png');
+    background-repeat: no-repeat;
+    background-size: 146px 32px;
+    top: 40px;
+    left: 40px;
+    width: 146px;
+    height: 32px;
+  }
+
+  img.main-img {
+    display: block;
+    flex-grow: 1;
+    height: 100%;
+    max-width: 768px;
+  }
 }
