@@ -1,0 +1,194 @@
+:root {
+  --color-primary: #5429ff;
+  --color-secondary: #344054;
+  --color-font-gray: #667085;
+  --color-white: #fff;
+  --color-border: #d0d5dd;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 88px 20px;
+  margin: auto;
+}
+
+.logo {
+  width: 102px;
+  height: 63px;
+  background-image: url('./images/logo_mobile.png');
+  background-position: center;
+  margin-bottom: 56px;
+}
+
+.text-group {
+  width: 100%;
+}
+
+h1.title {
+  width: 100%;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.73px;
+  letter-spacing: 1%;
+  color: var(--color-secondary);
+  margin-bottom: 8px;
+}
+
+p.description {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-font-gray);
+}
+
+form {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+form > label {
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+label > input {
+  margin-top: 8px;
+  width: 100%;
+  padding: 10px 44px 10px 14px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  outline: none;
+  color: var(--color-font-gray);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+form .material-icons {
+  font-size: 24px;
+  font-weight: 100;
+  color: var(--color-secondary);
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  cursor: pointer;
+}
+
+.options {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input#remember {
+  display: none;
+}
+
+input#remember + label:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+input#remember:checked + label:before {
+  content: '';
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  background-image: url('./images/check.png');
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: center;
+  margin-right: 8px;
+}
+
+.checkbox input#remember,
+.checkbox label {
+  cursor: pointer;
+}
+
+.checkbox label {
+  color: var(--color-secondary);
+}
+
+.options a {
+  color: var(--color-primary);
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.btn {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.btn.sign-in {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.btn.google {
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+p.help {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+p.help a {
+  color: var(--color-primary);
+}
