@@ -22,6 +22,11 @@ section.sign-in {
   margin: auto 0;
 }
 
+*:not(input) {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
